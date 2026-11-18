@@ -1,0 +1,28 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+.lighthouseci/
+node_modules/
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated files
+node_modules/
+dist/
+coverage/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs
+*.log

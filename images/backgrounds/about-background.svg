@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+<defs>
+ <linearGradient id="abg" x1="0" y1="0" x2="1600" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#08070f"/><stop offset=".48" stop-color="#110d1d"/><stop offset=".78" stop-color="#1d1228"/><stop offset="1" stop-color="#090810"/></linearGradient>
+ <radialGradient id="aglow" cx="0" cy="0" r="1" gradientTransform="matrix(500 0 0 300 1100 400)" gradientUnits="userSpaceOnUse"><stop stop-color="#a65eaa" stop-opacity=".22"/><stop offset="1" stop-color="#a65eaa" stop-opacity="0"/></radialGradient>
+ <linearGradient id="apeak" x1="0" y1="350" x2="0" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#5d3d72" stop-opacity=".5"/><stop offset="1" stop-color="#171323" stop-opacity=".1"/></linearGradient>
+ <pattern id="agrid" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0V52" stroke="#b17bd0" stroke-opacity=".035"/></pattern>
+</defs>
+<rect width="1600" height="700" fill="url(#abg)"/><rect width="1600" height="700" fill="url(#agrid)"/>
+<ellipse cx="1100" cy="400" rx="500" ry="300" fill="url(#aglow)"/>
+<path d="M0 560 190 430l150 72 210-192 150 151 180-104 160 132 160-90 180 122 120-64v243H0V560Z" fill="url(#apeak)"/>
+<path d="m350 310 200 192-82-42-55 8-63-50-46 16 46-124ZM880 356l160 133-76-32-45 5-39-31-41 13 41-88Z" fill="#b47db9" opacity=".06"/>
+<path d="M0 640 280 540l180 55 220-72 200 70 210-68 220 75 290-95v195H0V640Z" fill="#0b0a12" opacity=".72"/>
+<path d="M0 680h1600" stroke="#9a69b8" stroke-opacity=".16"/>
+<path d="M80 105h180M80 122h108M1350 105h170M1410 123h110" stroke="#b47bcf" stroke-opacity=".12" stroke-width="2"/>
+</svg>

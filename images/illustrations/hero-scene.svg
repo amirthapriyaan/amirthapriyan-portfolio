@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Night city skyline with violet lights</title>
+<desc id="desc">A dark futuristic city skyline with tall glass towers, subtle violet windows, atmospheric purple light and fine geometric lines.</desc>
+<defs>
+ <linearGradient id="heroBase" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#08070e"/><stop offset=".55" stop-color="#100a19"/><stop offset="1" stop-color="#07070c"/></linearGradient>
+ <radialGradient id="heroAura" cx="0" cy="0" r="1" gradientTransform="matrix(610 0 0 440 1110 410)" gradientUnits="userSpaceOnUse"><stop stop-color="#783ba4" stop-opacity=".34"/><stop offset=".58" stop-color="#4a2869" stop-opacity=".12"/><stop offset="1" stop-color="#24152f" stop-opacity="0"/></radialGradient>
+ <linearGradient id="towerStroke" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b77bda" stop-opacity=".56"/><stop offset="1" stop-color="#69427f" stop-opacity=".12"/></linearGradient>
+ <linearGradient id="heroBeam" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bd80e7" stop-opacity="0"/><stop offset=".5" stop-color="#a35bd3" stop-opacity=".13"/><stop offset="1" stop-color="#bd80e7" stop-opacity="0"/></linearGradient>
+ <pattern id="heroWindows" width="42" height="48" patternUnits="userSpaceOnUse"><rect x="8" y="9" width="9" height="17" rx="1" fill="#b986dc" opacity=".32"/><rect x="25" y="9" width="9" height="17" rx="1" fill="#76518d" opacity=".22"/></pattern>
+ <pattern id="heroGrid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" stroke="#9b67b8" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#heroBase)"/>
+<rect width="1600" height="900" fill="url(#heroGrid)"/>
+<ellipse cx="1110" cy="410" rx="610" ry="440" fill="url(#heroAura)"/>
+<path d="M700 0h190L420 900H230L700 0Z" fill="url(#heroBeam)"/>
+<path d="M1310 0h180L1010 900H830L1310 0Z" fill="url(#heroBeam)" opacity=".7"/>
+<!-- skyline -->
+<g opacity=".86">
+ <path d="M840 430h118v355H840zM980 320h145v465H980zM1147 390h112v395h-112zM1280 230h168v555h-168zM1468 365h112v420h-112z" fill="#0c0a13" stroke="url(#towerStroke)" stroke-width="2"/>
+ <path d="M840 430h118v355H840zM980 320h145v465H980zM1147 390h112v395h-112zM1280 230h168v555h-168zM1468 365h112v420h-112z" fill="url(#heroWindows)"/>
+ <path d="M840 430h118M980 320h145M1147 390h112M1280 230h168M1468 365h112" stroke="#c18ce3" stroke-opacity=".35" stroke-width="3"/>
+ <path d="M1050 320V205l37-28 38 28v115M1320 230V115l28-30 31 30v115" stroke="#9d68bd" stroke-opacity=".26" stroke-width="2"/>
+</g>
+<!-- distant neon architecture -->
+<path d="M0 710 260 580 420 580 610 430 780 430 930 285" stroke="#9b5fbe" stroke-opacity=".19" stroke-width="2"/>
+<path d="M0 758 270 628 440 628 625 478 790 478 955 330" stroke="#b77cda" stroke-opacity=".14" stroke-width="2"/>
+<path d="M0 812h1600" stroke="#9060ad" stroke-opacity=".24" stroke-width="2"/>
+<path d="M0 832h1600" stroke="#20172a" stroke-width="30" opacity=".55"/>
+<g fill="#d2a1e9" opacity=".55"><circle cx="130" cy="176" r="2"/><circle cx="265" cy="274" r="2"/><circle cx="476" cy="132" r="2"/><circle cx="720" cy="223" r="2"/><circle cx="1342" cy="128" r="2"/><circle cx="1510" cy="205" r="2"/></g>
+</svg>
