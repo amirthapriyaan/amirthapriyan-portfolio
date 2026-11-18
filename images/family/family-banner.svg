@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="t d">
+<title id="t">Family support illustration</title><desc id="d">A warm, respectful illustration representing family support.</desc>
+<defs>
+ <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171321"/><stop offset="1" stop-color="#202c43"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity=".025"/></linearGradient>
+ <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b18ce8"/><stop offset="1" stop-color="#6541ba"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4a94f"/><stop offset="1" stop-color="#258a9a"/></linearGradient>
+ <filter id="ds" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#050812" flood-opacity=".45"/></filter>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1280" height="800" rx="32" fill="url(#back)"/><rect width="1280" height="800" rx="32" fill="url(#grid)"/>
+<circle cx="1120" cy="90" r="290" fill="#b18ce8" opacity=".09"/><circle cx="90" cy="760" r="300" fill="#d4a94f" opacity=".055"/>
+<g filter="url(#ds)"><rect x="110" y="145" width="1060" height="520" rx="30" fill="#f4ecf9"/><circle cx="640" cy="405" r="205" fill="#d9c4f2"/><circle cx="640" cy="405" r="165" fill="#f9f4ff"/><g stroke="#7b58aa" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><circle cx="435" cy="330" r="62" fill="#d7a77d"/><path d="M340 575c5-115 40-175 95-175s90 60 95 175Z" fill="#536b8a"/><circle cx="640" cy="300" r="70" fill="#d9ad84"/><path d="M525 590c8-140 48-215 115-215s107 75 115 215Z" fill="#9b70ff"/><circle cx="845" cy="330" r="62" fill="#c88f6c"/><path d="M750 575c5-115 40-175 95-175s90 60 95 175Z" fill="#4f9c92"/></g><g fill="#28354b"><path d="M374 276q61-85 122 0l-10 25H384Z"/><path d="M570 236q70-95 140 0l-12 25H582Z"/><path d="M785 276q60-85 120 0l-10 25H795Z"/></g><path d="M210 620q90-90 180 0m500 0q90-90 180 0" stroke="#d4a94f" stroke-width="10" fill="none" stroke-linecap="round"/><g fill="#d4a94f"><path d="m280 235 10 20 22 3-16 15 4 22-20-11-20 11 4-22-16-15 22-3Z"/><path d="m1000 235 10 20 22 3-16 15 4 22-20-11-20 11 4-22-16-15 22-3Z"/></g></g><text x="640" y="100" fill="#fff" font-family="Arial,sans-serif" font-size="27" text-anchor="middle" letter-spacing="7">THE PEOPLE WHO KEEP ME GROUNDED</text>
+</svg>
