@@ -4935,24 +4935,16 @@ h1,h2,h3,h4,.section-heading h2,.section-intro-block h2,.contact-intro h2,
 }
 
 #hobbies .hobby-overlay {
-  display: grid !important;
-  position: absolute;
-  z-index: 2;
-  left: 11px;
-  right: 11px;
-  bottom: 10px;
-  gap: 2px;
-  padding: 9px 11px 8px;
-  border: 1px solid var(--photo-glass-border);
-  border-radius: 10px;
-  color: var(--photo-card-text) !important;
-  background: var(--photo-glass-bg);
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
-  text-shadow: var(--photo-glass-text-shadow);
-  box-shadow: var(--photo-glass-shadow);
+  display:grid!important; position:absolute; z-index:2; left:11px; right:11px; bottom:10px;
+  gap:2px; padding:9px 11px 8px;
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:10px; color:var(--photo-card-text)!important;
+  background: rgba(10, 10, 15, 0.12);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+  text-shadow:var(--photo-glass-text-shadow);
+  box-shadow:0 3px 12px rgba(0,0,0,0.10);
 }
-
 #hobbies .hobby-overlay strong {
   color: var(--photo-card-text) !important;
   font: 700 .9rem var(--font-display);
