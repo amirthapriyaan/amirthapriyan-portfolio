@@ -2447,3 +2447,7 @@ dialog.lightbox,
   #hero { padding-top:28px!important; padding-bottom:24px!important; }
   #hero .hero-illustration { max-height:44svh!important; }
 }
+/* Feature: prevent hero content from being clipped */
+#hero .hero-copy {
+  overflow: visible;
+}
