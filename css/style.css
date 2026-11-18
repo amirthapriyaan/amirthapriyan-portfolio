@@ -6715,6 +6715,7 @@ dialog.lightbox,
 .journey-extra[hidden] {
   display: block !important;
 }
+
 .hobby-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -6722,4 +6723,10 @@ dialog.lightbox,
 .hobby-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 28px rgba(80, 100, 255, 0.18);
+
+
+/* Feature: subtle hover lift for personal interest cards */
+#interests .liking-card:hover {
+  transform: translateY(-4px);
+
 }
