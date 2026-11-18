@@ -46,7 +46,7 @@
   --accent-2: #bd91ff;
   --accent-deep: #6636c7;
   --accent-soft: rgba(155, 112, 255, .12);
-  --accent-glow: rgba(155,112,255,.26);
+  --accent-glow: rgba(146,91,131,.26);
   --shadow-frame: 0 28px 80px rgba(0,0,0,.45);
   --shadow-section: 0 22px 58px rgba(0,0,0,.35),0 0 0 1px rgba(158,190,230,.08);
   --shadow-card: 0 12px 30px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.055);
