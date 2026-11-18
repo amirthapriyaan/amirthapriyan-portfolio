@@ -3785,6 +3785,7 @@ html {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   overflow: hidden;
+   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .family-card-front {
@@ -3798,7 +3799,10 @@ html {
   border-radius: 12px;
   overflow: hidden;
 }
-
+.family-card-flip:hover .family-card-face {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  border-color: var(--family-accent);
+}
 .family-card-front .family-avatar img {
   width: 100%;
   height: 100%;
@@ -5645,7 +5649,12 @@ html {
   margin: 8px 0 0 2px !important;
   clear: both;
 }
-
+#family .family-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
+}
 .social-links a {
   flex: 0 0 46px;
   width: 46px !important;
@@ -6156,6 +6165,19 @@ dialog.lightbox,
   overflow: hidden;
 }
 
+.family-card-front .family-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.family-card-front .family-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
 .hero-portrait-frame > img,
 .hero-photo-placeholder > img,
 .project-feature-image img,
@@ -6163,6 +6185,7 @@ dialog.lightbox,
 .hobby-card img,
 .family-card img {
   border-radius: var(--radius-md);
+  object-fit: cover;
 }
 
 @media (max-width: 700px) {
