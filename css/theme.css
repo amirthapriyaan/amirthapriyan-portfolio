@@ -1,6 +1,6 @@
 /* Portfolio design system — synchronized three-theme token set */
 
-:root[data-theme="dark"]
+:root {
   --header-height: 88px;
   --shadow-hero: rgba(0,0,0,.32);
   --shadow-icon: rgba(0,0,0,.28);
@@ -81,7 +81,7 @@
   --photo-caption-text: rgba(255,255,255,.84);
   --photo-title-shadow: 0 2px 12px rgba(0,0,0,.72);
 }
-:root {
+:root[data-theme="light"] {
   --header-height: 88px;
   --shadow-hero: rgba(39,45,72,.14);
   --shadow-icon: rgba(39,54,82,.12);
