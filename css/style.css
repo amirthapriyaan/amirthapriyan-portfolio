@@ -6692,3 +6692,8 @@ dialog.lightbox,
 .journey-extra[hidden] {
   display: block !important;
 }
+
+/* Feature: subtle hover lift for personal interest cards */
+#interests .liking-card:hover {
+  transform: translateY(-4px);
+}
