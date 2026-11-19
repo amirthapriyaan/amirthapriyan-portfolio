@@ -1,0 +1,93 @@
+
+name: PR Quality Checks
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [develop, main]
+
+permissions:
+  contents: read
+
+jobs:
+  check-html-titles:
+    name: Check HTML Titles
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check all HTML files have title tags
+        run: |
+          shopt -s nullglob
+          html_files=(*.html)
+
+          if [ ${#html_files[@]} -eq 0 ]; then
+            echo "ERROR: No HTML files found"
+            exit 1
+          fi
+
+          for file in "${html_files[@]}"; do
+            if ! grep -Eqi '<title([[:space:]>])' "$file"; then
+              echo "ERROR: $file is missing a title tag"
+              exit 1
+            fi
+          done
+
+          echo "All HTML files have title tags"
+
+  check-image-alt:
+    name: Check Image Alt Attributes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check images have alt attributes
+        run: |
+          MISSING=$(grep -rn '<img' --include='*.html' . | grep -vi 'alt=' || true)
+
+          if [ -n "$MISSING" ]; then
+            echo "ERROR: Images missing alt attributes:"
+            echo "$MISSING"
+            exit 1
+          fi
+
+          echo "All images have alt attributes"
+
+  check-no-console-log:
+    name: Check No Console Log
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check for console.log in JavaScript
+        run: |
+          if grep -rn "console\.log" js/ --include='*.js'; then
+            echo "ERROR: Remove console.log before merging"
+            exit 1
+          fi
+
+          echo "No console.log found"
+
+  all-checks-passed:
+    name: all-checks-passed
+    runs-on: ubuntu-latest
+    needs:
+      - check-html-titles
+      - check-image-alt
+      - check-no-console-log
+    if: always()
+    steps:
+      - name: Verify all quality checks
+        run: |
+          if [ "${{ needs.check-html-titles.result }}" != "success" ] || \
+             [ "${{ needs.check-image-alt.result }}" != "success" ] || \
+             [ "${{ needs.check-no-console-log.result }}" != "success" ]; then
+            echo "ERROR: One or more PR quality checks failed"
+            exit 1
+          fi
+
+          echo "All PR quality checks passed!"
